@@ -6,7 +6,7 @@ let nombreServicio2 = "MasajePiernas"
 let precioServicio2 = 1200
 let stockServicio2 = 10
 
-let cantidadCompras = prompt("Ingrese la cantidad de servicios distintos que desea comprar");
+let cantidadCompras = prompt("Ingrese la cantidad de servicios distintos que desea comprar:\n- MasajeEspalda\n- MasajePiernas");
 let precioTotal = 0;
 
 
