@@ -1,21 +1,21 @@
-let nombreProducto1 = "cerveza ipa"
-let precioProducto1 = 400
-let stockProducto1 = 20
+let nombreServicio1 = "MasajeEspalda"
+let precioServicio1 = 1400
+let stockServicio1 = 10
 
-let nombreProducto2 = "cerveza doble ipa"
-let precioProducto2 = 450
-let stockProducto2 = 20
+let nombreServicio2 = "MasajePiernas"
+let precioServicio2 = 1200
+let stockServicio2 = 10
 
-let nombreProducto3 = "cerveza neipa"
-let precioProducto3 = 400
-let stockProducto3 = 20
+let nombreServicio33 = "MasajeEspalda"
+let precioServicio3 = 1400
+let stockServicio3 = 10
 
-let nombreProducto4 = "cerveza apa"
-let precioProducto4 = 350
-let stockProducto4 = 20
+let nombreServicio4 = "MasajePiernas"
+let precioServicio4 = 1200
+let stockServicio4 = 10
 
 
-let cantidadCompras = prompt("ingrese la cantidad de productos distintos que quiere comprar: \n- cerveza ipa\n- cerveza doble ipa\n- cerveza neipa  \n- cerveza apa");
+let cantidadCompras = prompt("Ingrese la cantidad de servicios distintos que desea comprar:\n- MasajeEspalda\n- MasajePiernas\n- MasajeCara\n- MasajePiedras");
 let precioTotal = 0;
 
 function calculoPrecio(cantidad, precio){
