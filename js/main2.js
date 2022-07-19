@@ -6,12 +6,12 @@ let nombreServicio2 = "MasajePiernas"
 let precioServicio2 = 1200
 let stockServicio2 = 10
 
-let nombreServicio33 = "MasajeEspalda"
+let nombreServicio3 = "MasajeCara"
 let precioServicio3 = 1400
 let stockServicio3 = 10
 
-let nombreServicio4 = "MasajePiernas"
-let precioServicio4 = 1200
+let nombreServicio4 = "MasajePiedras"
+let precioServicio4 = 1000
 let stockServicio4 = 10
 
 
@@ -28,7 +28,7 @@ function calculoStock(cantidad, stock, precio){
         alert("El precio total es de: $" + (cantidad * precio))
     }
     else{
-        alert("No disponemos de esa cantidad en stock. Nuestro stock actual es de: " + stock + " unidades")
+        alert("No es posible brindarle tantos servicio, selecione una cantidad menor")
     }
 }
 
@@ -37,23 +37,23 @@ function sumaIva(precio){
 }
 for(let i = 0; i < cantidadCompras; i++){
 
-    let compra1 = prompt("ingrese el nombre del producto que quiere comprar:\n- cerveza ipa\n- cerveza doble ipa\n- cerveza neipa  \n- cerveza apa");
+    let compra1 = prompt("Ingrese el nombre del servicio que desea comprar: \n- MasajeEspalda\n- MasajePiernas\n- MasajeCara\n- MasajePiedras");
     let cantidad1 = prompt("ingrese la cantidad del producto que quiere comprar:");
 
-    if(compra1 == "cerveza ipa"){
-        calculoStock(cantidad1, stockProducto1, precioProducto1)
+    if(compra1 == "MasajeEspalda"){
+        calculoStock(cantidad1, stockServicio1, precioServicio1)
     }
-    else if(compra1 == "cerveza doble ipa"){
-        calculoStock(cantidad1, stockProducto2, precioProducto2)
+    else if(compra1 == "MasajePiernas"){
+        calculoStock(cantidad1, stockServicio2, precioServicio2)
     }
-    else if(compra1 == "cerveza neipa"){
-        calculoStock(cantidad1, stockProducto3, precioProducto3)
+    else if(compra1 == "MasajeCara"){
+        calculoStock(cantidad1, stockServicio3, precioServicio3)
     }
-    else if(compra1 == "cerveza apa"){
-        calculoStock(cantidad1, stockProducto4, precioProducto4)
+    else if(compra1 == "MasajePiedras"){
+        calculoStock(cantidad1, stockServicio4, precioServicio4)
     }
     else{
-        alert("No tenemos ese producto")
+        alert("No tenemos ese servicio")
     }
 }
 
@@ -66,13 +66,9 @@ switch(true){
         precioTotal = precioTotal * 0.90
         alert("Recibiste un descuento del 10% por tu compra")
         break;
-    case precioTotal < 4000:
-        precioTotal = precioTotal * 0.80
-        alert("Recibiste un descuento del 20% por tu compra")
-        break;
     case precioTotal > 6000:
-        alert("Recibiste un descuento del 40% por tu compra")
-        precioTotal = precioTotal * 0.60
+        alert("Recibiste un descuento del 30% por tu compra")
+        precioTotal = precioTotal * 0.70
         break;
     default:
         console.log(precioTotal)
