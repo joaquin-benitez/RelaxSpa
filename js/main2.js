@@ -58,11 +58,11 @@ for(let i = 0; i < cantidadCompras; i++){
 }
 
 switch(true){
-    case precioTotal < 1500 || precioTotal > 1000:
+    case precioTotal < 3000 || precioTotal > 1000:
         precioTotal = precioTotal * 0.95
         alert("Recibiste un descuento del 5% por tu compra")
         break;
-    case precioTotal < 3000:
+    case precioTotal > 3000:
         precioTotal = precioTotal * 0.90
         alert("Recibiste un descuento del 10% por tu compra")
         break;
