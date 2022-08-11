@@ -32,10 +32,10 @@ li{
     text-align: center;    
 }
 
-.container{
+/* .container{
     border: 1px solid #ccc;
     padding: 4px;
-}
+} */
 
 .inicio{
     background-color: #FFEDDB;
@@ -129,10 +129,33 @@ padding-top: 5rem;
     align-items: center;
     margin-top: 5rem;
 }
+.row{
+    gap: 1.4rem;
+    justify-content: center;
+    }
+.card{
+    
+    align-items: center;
+    background-color: transparent;
+    width: 300px;  
+    border: none;
+    --bs-card-spacer-y: 0%;
+    --bs-card-spacer-x: 0;
+    
+}
 
 .servicio{
     margin: 1.5rem 10px;
     width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    background-color: #F9C5D5;
+    box-sizing: border-box;
+    transition: all 0.5s;  
+    
+}
+.card-body{
+    margin: 1.5rem 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
     background-color: #F9C5D5;
@@ -151,6 +174,12 @@ padding-top: 5rem;
     width: 300px;
     height: 300px;
  }
+
+ .imagen{
+    width: 300px;
+    height: 300px;
+ }
+ 
 
 .btn__group{
     margin-bottom: 2px;
@@ -196,3 +225,6 @@ footer{
     border-color: beige !important;
 }
 
+.conteiner-carrito{
+    padding-top: 10rem;
+}
