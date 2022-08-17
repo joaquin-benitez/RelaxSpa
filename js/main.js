@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const DOMcarrito = document.querySelector('#carrito');
     const DOMtotal = document.querySelector('#total');
     const DOMbotonVaciar = document.querySelector('#boton-vaciar');
+    const DOMbotonComprar = document.querySelector('#boton-comprar');
+
     const listaDeProductos = [
         {
             id: 1,
@@ -210,4 +212,42 @@ document.addEventListener('DOMContentLoaded', () => {
     cargarCarritoDeLocalStorage();
     renderizarProductos();
     renderizarCarrito();
+
+    DOMbotonComprar.addEventListener('click', vaciarCarrito);
+    cargarCarritoDeLocalStorage();
+    renderizarProductos();
+    renderizarCarrito();
+
+    DOMbotonComprar.addEventListener('click', ()=>
+    Swal.fire({
+        title:"Muchas Gracias",
+        text:"¿Desea finalizar su compra?",
+        showCancelButton: true,
+        confirmButtonText: "Si",
+        cancelButtonText: "No",
+    }).then((resultado)=> {
+        if(resultado.isConfirmed) {
+        Swal.fire({
+            title:"Felicidades",
+            text:"Para confirmar tu turno comunicate a nuestro correo RelaxSpa@gmail.com",
+            confirmButtontext: "OK",
+            icon:"success",
+        })
+        } 
+    })
+    );
+
+
+
+    const miNodoBoton =document.querySelector('#btn');
+    miNodoBoton.addEventListener('click', ()=>
+    Toastify({
+        Text:"Agregaste un masaje al carrito",
+        duration:3000,
+        gravity:"top",
+        position:"right",
+    }).showToast(),
+    );
+
+
 });
