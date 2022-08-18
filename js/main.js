@@ -239,15 +239,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    const miNodoBoton =document.querySelector('#btn');
-    miNodoBoton.addEventListener('click', ()=>
-    Toastify({
-        Text:"Agregaste un masaje al carrito",
-        duration:3000,
-        gravity:"top",
-        position:"right",
-    }).showToast(),
-    );
+    const miNodoBoton =document.getElementsByClassName("btn-primary")
+    for (const elemento of miNodoBoton) {
+        elemento.addEventListener('click', ()=>
+        Toastify({
+            text:"Agregaste un masaje al carrito",
+            duration:3000,
+            gravity:"top",
+            position:"right",
+        }).showToast(),
+        );
+    }
+
 
 
 });
