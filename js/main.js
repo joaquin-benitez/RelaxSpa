@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
             const miNodoBoton = document.createElement('button');
             miNodoBoton.classList.add('btn', 'btn-primary');
-            miNodoBoton.innerText = 'agregar al carrito';
+            miNodoBoton.innerText = 'Agregar al carrito';
             miNodoBoton.setAttribute('marcador', info.id);
             miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
             // Insertamos
@@ -247,6 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
             duration:3000,
             gravity:"top",
             position:"right",
+            className: 'btn-tostify',
         }).showToast(),
         );
     }

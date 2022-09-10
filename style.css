@@ -229,6 +229,32 @@ footer{
     padding-top: 10rem;
 }
 
-.dolar{
-    padding-top: 10rem;
+.btn-finalizar{
+    background-color:#E4AEC5 ;
+    color: aliceblue;  
+}
+
+.btn-primary{
+    background-color: #d35a8e;
+    color: aliceblue;
+    border-color: aliceblue;
+    
+}
+
+.btn:hover {
+    color: #d35a8e;
+    background-color: aliceblue;
+    border-color: #d35a8e;
+}
+
+.btn-tostify{
+    background-color: #d35a8e;
+    color: aliceblue;
+    border-color: aliceblue;
+    background: #d35a8e;
+}
+
+.staff{
+    padding-top: 8rem;
+    text-align: center;
 }
